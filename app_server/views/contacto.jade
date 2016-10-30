@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  #banner.page-header
+    .row
+      .col-md-6.col-sm-12
+        h1= title
+
+    .row
+      .col-md-6.col-md
+       
+        form(method='POST' action='/contacto')
+          div.form-group
+            label(for='name') Nombre y Apellido:
+            input#name.form-control(type='text', placeholder='Nombre y Apellido' name='name')
+          div.form-group
+            label(for='email') Email:
+            input#email.form-control(type='email', placeholder='nombre@email.com' name='email')
+          div.form-group
+            label(for='favoriteBook') Mensaje:
+            textarea#message.form-control(type='text', placeholder='Mensaje' name='message')
+          button.btn.btn-primary(type='submit') Enviar
+
+    .row
+      .col-md-6.col-md
+        if(typeof msg !== 'undefined')
+        if(!!err)
+            div(class='msgbox err') #{msg}
+        else
+            div(class='msgbox success') #{msg}
