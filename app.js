@@ -10,7 +10,7 @@ var routes = require('./app_server/routes/index');
 
 var app = express();
 
-app.use(favicon(path.join(__dirname,'public', 'favicon.ico')));
+app.use(favicon(path.join(__dirname,'public', 'favicon.png')));
 
 // view engine setups
 app.set('views', path.join(__dirname, 'app_server', 'views'));
