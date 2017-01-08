@@ -191,10 +191,7 @@ header {
     color: #fff;
     width: 100%;
     background-color: #c9c9c9;
-    background: url("../assets/background.jpg") repeat right top fixed, -webkit-linear-gradient(left, #ba53a0, #fff);
-    background: url("../assets/background.jpg") repeat right top fixed, -o-linear-gradient(right, #ba53a0, #fff);
-    background: url("../assets/background.jpg") repeat right top fixed, -moz-linear-gradient(right, #ba53a0, #fff);
-    background: url("../assets/background.jpg") repeat right top fixed, linear-gradient(to right, #ba53a0, #fff);
+    background-image: url("http://cdn.wallpapersafari.com/24/38/TWVzhZ.jpg");
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
